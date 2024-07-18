@@ -17,7 +17,7 @@ const commentRouter = require('./routes/articles');
 const methodOverride = require('method-override');
 const app = express();
 
-const url = 'mongodb+srv://root:root@cluster0.r1dqxng.mongodb.net/?retryWrites=true&w=majority';
+const url = 'mongodb+srv://admin:admin@cluster0.r1dqxng.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0';
 
 mongoose.set("strictQuery", false);
 mongoose.connect(url).then(() => console.log('connected to MongoDB'))
